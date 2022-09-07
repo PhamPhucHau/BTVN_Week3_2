@@ -32,7 +32,7 @@ public class DepartmentController {
             return ResponseEntity.badRequest().body(bindingResult.getAllErrors());
         }
 
-            return ResponseEntity.ok().body(departmentDTO);
+            return ResponseEntity.ok().body(departmentDTOService.getDepartmentDTO(departmentDTO));
 
     }
 
