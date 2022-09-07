@@ -2,7 +2,7 @@
 # 1/. Cấu hình ứng dụng với các thuộc tính sau
 [https://github.com/PhamPhucHau/BTVN_Week3_2/blob/master/src/main/resources/application.properties ](https://github.com/PhamPhucHau/BTVN_Week3_2/blob/master/src/main/resources/application.properties)
 #### Api để test valid DepartmentDTO
-1. ![http://localhost:9081/likelion/department/addDepartment](http://localhost:9081/likelion/department/addDepartment)
+1. [http://localhost:9081/likelion/department/addDepartment](http://localhost:9081/likelion/department/addDepartment)
 - 
 ```
 {
