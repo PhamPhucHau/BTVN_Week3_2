@@ -199,6 +199,7 @@ Exception[Field error in object 'employeeDTO' on field 'email': rejected value [
 
 ```
 -logging sau khi gọi method getEmployeeDto khôg thành công 
+ [http://localhost:9081/likelion/employee/getEmployee](http://localhost:9081/likelion/employee/getEmployee) 
  - ID khong hợp lệ 
  ```
 {
