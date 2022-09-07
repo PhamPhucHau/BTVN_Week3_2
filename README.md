@@ -143,7 +143,7 @@ Exception[Field error in object 'employeeDTO' on field 'email': rejected value [
 ```
 # Logging Respect
 1. logging trước và sau khi gọi method getDepartmentDto
-![http://localhost:9081/likelion/department/getDepartment](http://localhost:9081/likelion/department/getDepartment)
+ [http://localhost:9081/likelion/department/getDepartment](http://localhost:9081/likelion/department/getDepartment)
 ```
 {
 	"departmentId":1,
