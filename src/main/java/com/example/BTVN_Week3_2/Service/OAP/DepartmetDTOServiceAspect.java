@@ -1,0 +1,23 @@
+package com.example.BTVN_Week3_2.Service.OAP;
+
+import com.example.BTVN_Week3_2.Service.DepartmentDTOService;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Before;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class DepartmetDTOServiceAspect {
+    private Logger logger= LoggerFactory.getLogger(DepartmentDTOService.class);
+    @Before("execution(* com/example/BTVN_Week3_2/Service/DepartmentDTOService.java)")
+    public void beforeDepartmentDTOService(JoinPoint joinPoint)
+    {
+        logger.info("before called service get DepartmentDTO"+ joinPoint.toString());
+    }
+    @After("execution(* com/example/BTVN_Week3_2/Service/DepartmentDTOService.java)")
+    public void afterGetDepartmentDTOService(JoinPoint joinPoint)
+    {
+        logger.info("***LoggingAspect.Log after called service get DepartmentDTO"+ joinPoint.toString());
+    }
+}
