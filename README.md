@@ -222,3 +222,282 @@ Exception[Field error in object 'employeeDTO' on field 'email': rejected value [
  ```
 
 
+#### API get all cart
+1. [http://localhost:8080/cart](http://localhost:8080/cart)
+- 
+```
+{
+	
+}
+```
+- Kết quả 
+```
+[
+    {
+        "id": 1,
+        "total": 100000,
+        "userId": 1
+    },
+    {
+        "id": 2,
+        "total": 200000,
+        "userId": 2
+    },
+    {
+        "id": 3,
+        "total": 123000,
+        "userId": 3
+    },
+    {
+        "id": 4,
+        "total": 400000,
+        "userId": 4
+    },
+    {
+        "id": 5,
+        "total": 1000000,
+        "userId": 5
+    },
+    {
+        "id": 6,
+        "total": 2000000,
+        "userId": 6
+    },
+    {
+        "id": 7,
+        "total": 10000000,
+        "userId": 7
+    },
+    {
+        "id": 8,
+        "total": 10000,
+        "userId": 8
+    },
+    {
+        "id": 9,
+        "total": 13548125,
+        "userId": 9
+    },
+    {
+        "id": 10,
+        "total": 15489641,
+        "userId": 10
+    }
+]
+```
+#### API get all reviews by id product  
+1. [http://localhost:8080/rating/product/1](http://localhost:8080/rating/product/1)
+- 
+```
+{
+	
+}
+```
+- Kết quả 
+```
+[
+    {
+        "id": 11,
+        "comment": "sản phẩm tốt",
+        "rateScore": 1.0,
+        "userId": 1,
+        "productId": 1
+    },
+    {
+        "id": 18,
+        "comment": "Comment1",
+        "rateScore": 1.0,
+        "userId": 1,
+        "productId": 1
+    },
+    {
+        "id": 19,
+        "comment": "Comment1",
+        "rateScore": 1.0,
+        "userId": 1,
+        "productId": 1
+    },
+    {
+        "id": 20,
+        "comment": "Comment1",
+        "rateScore": 1.0,
+        "userId": 1,
+        "productId": 1
+    }
+]
+```
+#### API get all coupon. Method=GET. 
+1. [http://localhost:8080/coupon](http://localhost:8080/coupon)
+- 
+```
+{
+	
+}
+```
+- Kết quả 
+```
+[
+    {
+        "id": 1,
+        "name": "Khuyến mãi cho khách hàng mới",
+        "discount": 0.1,
+        "minPrice": 0.0,
+        "maxPrice": 50000.0,
+        "code": "KMKHM",
+        "amount": 50.0
+    },
+    {
+        "id": 2,
+        "name": "Giảm 10% Giảm tối đa 50,000đ đơn tối thiểu 99,000đ",
+        "discount": 0.1,
+        "minPrice": 99000.0,
+        "maxPrice": 50000.0,
+        "code": "HUJUI",
+        "amount": 30.0
+    },
+    {
+        "id": 3,
+        "name": "Giảm 20,000đ đơn tối thiểu 199,000đ",
+        "discount": 0.0,
+        "minPrice": 199000.0,
+        "maxPrice": 20000.0,
+        "code": "HUYEJ",
+        "amount": 30.0
+    },
+    {
+        "id": 4,
+        "name": "Giảm 10% Giảm tối đa 300,000đ đơn tối thiểu 499,000đ",
+        "discount": 0.1,
+        "minPrice": 499000.0,
+        "maxPrice": 300000.0,
+        "code": "YUITLR",
+        "amount": 30.0
+    },
+    {
+        "id": 5,
+        "name": "Giảm 50,000đ đơn tối thiểu 0đ",
+        "discount": 0.0,
+        "minPrice": 0.0,
+        "maxPrice": 50000.0,
+        "code": "QIEHFU",
+        "amount": 30.0
+    },
+    {
+        "id": 6,
+        "name": "Giảm 10,000đ đơn tối thiểu 120,000đ",
+        "discount": 0.0,
+        "minPrice": 120000.0,
+        "maxPrice": 10000.0,
+        "code": "TEWUYG",
+        "amount": 30.0
+    },
+    {
+        "id": 7,
+        "name": "Giảm 5% Giảm tối đa 500,000đ đơn tối thiếu 300,000đ",
+        "discount": 0.05,
+        "minPrice": 300000.0,
+        "maxPrice": 500000.0,
+        "code": "OIUYTR",
+        "amount": 30.0
+    },
+    {
+        "id": 8,
+        "name": "Giảm 150,000đ đơn tối thiểu 1,500,000đ",
+        "discount": 0.0,
+        "minPrice": 1500000.0,
+        "maxPrice": 150000.0,
+        "code": "RTEGDT",
+        "amount": 30.0
+    },
+    {
+        "id": 9,
+        "name": "Giảm 10% Giảm tối đa 60,000đ đơn tối thiểu 400,000đ",
+        "discount": 0.1,
+        "minPrice": 400000.0,
+        "maxPrice": 60000.0,
+        "code": "YEUWGY",
+        "amount": 30.0
+    },
+    {
+        "id": 10,
+        "name": "Giảm 10% Giảm tối đa 100,000đ đơn tối thiểu 600,000đ",
+        "discount": 0.1,
+        "minPrice": 600000.0,
+        "maxPrice": 100000.0,
+        "code": "EGYFGE",
+        "amount": 30.0
+    }
+]
+```
+#### API get coupon by coupon id. Method=GET
+1. [http://localhost:8080/coupon/1](http://localhost:8080/coupon/1)
+- 
+```
+{
+	
+}
+```
+- Kết quả 
+```
+{
+    "id": 1,
+    "name": "Khuyến mãi cho khách hàng mới",
+    "discount": 0.1,
+    "minPrice": 0.0,
+    "maxPrice": 50000.0,
+    "code": "KMKHM",
+    "amount": 50.0
+}
+```
+#### API create new  coupon.  Method=POST
+1. [http://localhost:8080/coupon](http://localhost:8080/coupon)
+- 
+```
+{
+    "name": "Khuyến mãi cho khách hàng mới",
+    "discount": 0.1,
+    "minPrice": 0.0,
+    "maxPrice": 50000.0,
+    "code": "KMKHM",
+    "amount": 50.0
+}
+```
+- Kết quả 
+```
+{
+    "id": 11,
+    "name": "Khuyến mãi cho khách hàng mới",
+    "discount": 0.1,
+    "minPrice": 0.0,
+    "maxPrice": 50000.0,
+    "code": "KMKHM",
+    "amount": 50.0
+}
+```
+#### API update a coupon by .  Method:PUT
+1. [http://localhost:8080/coupon/11](http://localhost:8080/coupon/11)
+- 
+```
+{
+    "name": "Khuyến mãi cho khách hàng mới",
+    "discount": 0.1,
+    "minPrice": 2000.0,
+    "maxPrice": 50000.0,
+    "code": "KMKHM",
+    "amount": 50.0
+}
+```
+- Kết quả 
+```
+true
+```
+#### API update a coupon by .  Method:
+1. [http://localhost:8080/coupon/11](http://localhost:8080/coupon/11)
+- 
+```
+
+```
+- Kết quả 
+```
+true
+```
